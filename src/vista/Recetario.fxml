@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RecetarioController">
+   <children>
+      <TableView fx:id="recetario" layoutX="21.0" layoutY="79.0" prefHeight="303.0" prefWidth="190.0">
+        <columns>
+          <TableColumn id="receta" fx:id="titulo" prefWidth="187.0" text="Recetas" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="24.0" prefHeight="28.0" prefWidth="138.0" text="Recetario">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="67.0" text="Ingredientes:" />
+      <Label layoutX="248.0" layoutY="223.0" text="Preparacion:" />
+      <Label fx:id="nombre" layoutX="247.0" layoutY="28.0" prefHeight="25.0" prefWidth="392.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="250.0" layoutY="404.0" mnemonicParsing="false" onAction="#abrirEditarReceta" prefHeight="42.0" prefWidth="138.0" text="Editar receta" />
+      <Button layoutX="504.0" layoutY="403.0" mnemonicParsing="false" onAction="#eliminarReceta" prefHeight="42.0" prefWidth="138.0" text="Eliminar receta" />
+      <Button layoutX="61.0" layoutY="405.0" mnemonicParsing="false" onAction="#abrirAgregarReceta" prefHeight="42.0" prefWidth="116.0" text="Agregar receta" />
+      <TextArea fx:id="ingredientes" editable="false" layoutX="249.0" layoutY="93.0" prefHeight="119.0" prefWidth="392.0" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent;" />
+      <TextArea fx:id="preparacion" editable="false" layoutX="249.0" layoutY="244.0" prefHeight="119.0" prefWidth="392.0" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent;" />
+   </children>
+</AnchorPane>
